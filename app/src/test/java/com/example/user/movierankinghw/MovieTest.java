@@ -52,4 +52,9 @@ public class MovieTest {
         assertEquals(9, movie.getRanking());
     }
 
+    @Test
+    public void testMovieDetails(){
+        assertEquals("Title: Hobbit, Genre: JRR Tolkin, Ranking: 10", movie.toString());
+    }
+
 }
