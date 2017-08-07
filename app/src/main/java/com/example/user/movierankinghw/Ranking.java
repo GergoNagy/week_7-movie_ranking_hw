@@ -34,4 +34,11 @@ public class Ranking {
         Movie m = ranking[index];
         return m.getTitle();
     }
+
+    public void getReplace(Movie newMovie) {
+        int i = getCount() - 1;
+        this.ranking[i] = null;
+        int getCount = getCount();
+        ranking[getCount] = newMovie;
+    }
 }

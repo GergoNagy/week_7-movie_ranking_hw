@@ -58,5 +58,13 @@ public class RankingTest {
         assertEquals("Movie2", ranking.getMovieByRank(2));
     }
 
+    @Test
+    public void testLastMovieReplace(){
+        ranking.addMovie(movie1);
+        ranking.addMovie(movie2);
+        ranking.getReplace(movie5);
+        assertEquals("Movie5", ranking.getMovieByRank(2));
+    }
+
 
 }
